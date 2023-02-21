@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "less /etc/passwd"
+cat /etc/passwd
 
 
