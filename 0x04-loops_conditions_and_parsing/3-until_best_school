@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
-# prints a string 10 times using until loop 
+# print a string 10 times using until loop
 
 i=0
 
-until false do;
-    echo "Best School"
-    ((i++))
-if ["$1" -lt 10]; then
+until false; do
+  echo "Best School"
+  ((i++))
+  if [[ $i -lt 10 ]]; then
     continue
-else
+  else
     break
-fi
+  fi
 done
