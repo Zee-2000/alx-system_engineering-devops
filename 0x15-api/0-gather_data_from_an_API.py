@@ -14,6 +14,6 @@ if __name__ == "___main___":
     todos = requests.get(url + "todos", params={"userId":sys.argv[1]}).json()
 
 #Gathering data
-    compeleted = [todo.get("title")for todo in todos:if todo.get("compeleted")is True]
+    compeleted = [todo.get("title") for todo in todos if todo.get("completed") is True]
     print("Employee{} is done with tasks({}/{})".format(user.get("name"), len(compeleted), len(todos)))
-    [print("\todo{}".format(compelete))for compelete in compeleted]
+    [print("\todo {}".format(compelete))for compelete in compeleted]
